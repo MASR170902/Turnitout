@@ -461,7 +461,7 @@ if st.button("🚀 Proses & Humanize Dokumen", type="primary", use_container_wid
                     lang=lang_choice,
                     fix_em_dash=opt_em_dash,
                     boost_burstiness=opt_burstiness,
-                    strip_markdown_bold=strip_markdown_bold
+                    strip_markdown_bold=opt_strip_bold
                 )
                 output_docx_bytes = create_plain_docx_bytes(output_text)
                 after_word_count = len(re.findall(r'\S+', output_text.replace("—", " ")))
